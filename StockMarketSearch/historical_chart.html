@@ -1,0 +1,224 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Stock Market Search</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+
+        <!-- jQuery  -->
+
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+        <script   src="https://code.jquery.com/jquery-2.2.2.js"   integrity="sha256-4/zUCqiq0kqxhZIyp4G0Gk+AOtCJsY1TA00k5ClsZYE="   crossorigin="anonymous"></script>
+
+        <script   src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"   integrity="sha256-DI6NdAhhFRnO2k51mumYeDShet3I8AKCQf/tf7ARNhI="   crossorigin="anonymous"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+        <!-- Moment JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js" type="text/javascript"></script>
+
+        <!-- highcharts -->
+        <script src="https://code.highcharts.com/stock/highstock.js"></script>
+
+        <!-- My CSS -->
+        <link rel="stylesheet" type="text/css" href="theme.css">
+
+        <!-- My JavaScript -->
+        <script type="text/javascript" src="javascript.js"></script>
+        
+        <style>
+            .container {
+                padding: 0 auto
+                margin: 0 auto
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <script>
+            
+            var server_url = "http://storied-coil-127205.appspot.com/";
+
+            function getHistoricalChart(currSymbol) {
+
+                // © 2016 GitHub MarkitTimeseriesServiceSample.js
+
+                //Make JSON request for timeseries data
+                $.ajax({
+                    
+                    url: server_url,
+                    dataType: "json",
+                    type: "get",
+                    data: { 
+                        params: currSymbol
+                    },
+                    
+                    success: function(json){
+                        // console.log(json);
+                        
+                        render(json, currSymbol);
+
+                    },
+                    
+                });
+
+
+                function _fixDate(dateIn) {
+                    var dat = new Date(dateIn);
+                    return Date.UTC(dat.getFullYear(), dat.getMonth(), dat.getDate());
+                };
+
+                function _getOHLC(json) {
+                    var dates = json.Dates || [];
+                    var elements = json.Elements || [];
+                    var chartSeries = [];
+
+                    if (elements[0]){
+
+                        for (var i = 0, datLen = dates.length; i < datLen; i++) {
+                            var dat = _fixDate( dates[i] );
+                            var pointData = [
+                                dat,
+                                elements[0].DataSeries['open'].values[i],
+                                elements[0].DataSeries['high'].values[i],
+                                elements[0].DataSeries['low'].values[i],
+                                elements[0].DataSeries['close'].values[i]
+                            ];
+                            chartSeries.push( pointData );
+                        };
+                    }
+                    return chartSeries;
+                };
+
+                function _getVolume(json) {
+                    var dates = json.Dates || [];
+                    var elements = json.Elements || [];
+                    var chartSeries = [];
+
+                    if (elements[1]){
+
+                        for (var i = 0, datLen = dates.length; i < datLen; i++) {
+                            var dat = _fixDate( dates[i] );
+                            var pointData = [
+                                dat,
+                                elements[1].DataSeries['volume'].values[i]
+                            ];
+                            chartSeries.push( pointData );
+                        };
+                    }
+                    return chartSeries;
+                };
+
+                function render(data, currSymbol) {
+                    
+                    // split the data set into ohlc and volume
+                    var ohlc = _getOHLC(data),
+                        volume = _getVolume(data);
+
+                    // set the allowed units for data grouping
+                    var groupingUnits = [[
+                        'week',                         
+                        [1]                             
+                    ], [
+                        'month',
+                        [1, 2, 3, 4, 6]
+                    ]];
+
+                    // create the chart
+                    $('#historical_chart').highcharts('StockChart', {
+
+                        rangeSelector : {
+                            buttons: [{
+                                type: 'week',
+                                count: 1,
+                                text: '1w'
+                            }, {
+                                type: 'month',
+                                count: 1,
+                                text: '1m'
+                            }, {
+                                type: 'month',
+                                count: 3,
+                                text: '3m'
+                            }, {
+                                type: 'month',
+                                count: 6,
+                                text: '6m'
+                            }, {
+                                type: 'ytd',
+                                text: 'YTD'
+                            }, {
+                                type: 'year',
+                                count: 1,
+                                text: '1y'
+                            }, {
+                                type: 'all',
+                                text: 'All'
+                            }],
+
+                            selected : 0
+                        },
+
+                        title : {
+                            text : currSymbol + " Stock Value",
+                            style: { fontSize: '20px'}
+                        },
+
+//                        yAxis: {
+//                            min: 0,
+//                            title: {
+//                                text: 'Stock Value',
+//                            }
+//                        },
+
+                        series : [{
+                            name : currSymbol + " Stock Value",
+                            data : ohlc,
+                            type : 'area',
+                            threshold : null,
+                            tooltip : {
+                                valueDecimals : 2
+                            },
+                            fillColor : {
+                                linearGradient : {
+                                    x1: 0,
+                                    y1: 0,
+                                    x2: 0,
+                                    y2: 1
+                                },
+                                stops : [
+                                    [0, Highcharts.getOptions().colors[0]],
+                                    [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                                ]
+                            }
+                        }]
+
+                    });
+
+                };
+            
+            };
+
+        </script>
+
+        <div class="container">
+            <div id="historical_chart">
+            </div>
+        </div>
+
+    </body>
+</html>
+

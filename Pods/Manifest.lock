@@ -1,0 +1,10 @@
+PODS:
+  - CCAutocomplete (0.0.4)
+
+DEPENDENCIES:
+  - CCAutocomplete (~> 0.0)
+
+SPEC CHECKSUMS:
+  CCAutocomplete: 7e54cab43d10eb9e5385d5b3409e9dee0b7af714
+
+COCOAPODS: 0.39.0

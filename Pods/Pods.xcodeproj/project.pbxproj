@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F44F0D338398821A65D809A1C109AD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		172C6E5883333D3985912427AA1B278F /* AutocompleteDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0845EB31A6A03478758B92053434D9B1 /* AutocompleteDelegate.swift */; };
+		1A9388F9B93A19817B63C58B2178785C /* AutoCompleteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A277B82F0FB79266E014C73AC87DC101 /* AutoCompleteCell.swift */; };
+		1C584A4E8F8E2837CC8B049E5009AAAC /* AutoCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EFD2A677477FD43547879D244B16A2 /* AutoCompleteViewController.swift */; };
+		316592E87EC08D6084654903638E85EE /* CCAutocomplete-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF9837B6F9FE0986700D3C8FF8BF8AF /* CCAutocomplete-dummy.m */; };
+		50858E588A7A405BCFC1D0C3C1D08938 /* Pods-StockMarketSearch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FE5C019E7C2FA0CC527785E9953AE63 /* Pods-StockMarketSearch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578F618A8B0B97E1753A74B6BE0685A6 /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4731DBFFEFFF8D7790FFA5BEA778A5E0 /* TableViewDelegate.swift */; };
+		5E601C50B1A22B64E99F9AA8271E3760 /* DefaultAutoCompleteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A33EF3479416F25C5763783EC3AB0AE /* DefaultAutoCompleteCell.xib */; };
+		7378FD696A4760AB326B6E746C11B648 /* Autocomplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49286CCAA473EE0C3E64799CEC487223 /* Autocomplete.swift */; };
+		81990BCAC4F4FBADC3D54073DD3AF1B9 /* Pods-StockMarketSearch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2583DE3F4F445A4A97234BBEAB09DD /* Pods-StockMarketSearch-dummy.m */; };
+		B99CF4FB50545416804D16F8D26D9C3B /* TableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019ED7EE71D9F52A52A3F52A2A222E14 /* TableViewDatasource.swift */; };
+		E23AEA0759E0AFC10B3E7038A1449368 /* CCAutocomplete-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34CC293A8D9681D7EEA914E55C299D6F /* CCAutocomplete-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF935AD349B0A80EAF4C2C09513B815F /* AutocompleteCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7DFF28C261344CA3BE4255701FE71D /* AutocompleteCellData.swift */; };
+		F07C78779253D41E095B838CF7C15C41 /* Autocomplete.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBA8157B211D53670D3EF90E33F65E8B /* Autocomplete.storyboard */; };
+		F1EAC0BAF490D6BC873A75E1E536350A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FA9D52BC841C94A8DAD9300473E5D0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1B8A11CB006FD870EBBFCAD7E7EDEA8;
+			remoteInfo = CCAutocomplete;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		019ED7EE71D9F52A52A3F52A2A222E14 /* TableViewDatasource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewDatasource.swift; path = Autocomplete/AutoComplete/TableViewDatasource.swift; sourceTree = "<group>"; };
+		02EFD2A677477FD43547879D244B16A2 /* AutoCompleteViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoCompleteViewController.swift; path = Autocomplete/AutoComplete/AutoCompleteViewController.swift; sourceTree = "<group>"; };
+		0845EB31A6A03478758B92053434D9B1 /* AutocompleteDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutocompleteDelegate.swift; path = Autocomplete/AutoComplete/AutocompleteDelegate.swift; sourceTree = "<group>"; };
+		0CD2D72D40F358AD79E8ED1F75DD69D6 /* Pods-StockMarketSearch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StockMarketSearch-acknowledgements.plist"; sourceTree = "<group>"; };
+		2AF9837B6F9FE0986700D3C8FF8BF8AF /* CCAutocomplete-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CCAutocomplete-dummy.m"; sourceTree = "<group>"; };
+		2FE5C019E7C2FA0CC527785E9953AE63 /* Pods-StockMarketSearch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StockMarketSearch-umbrella.h"; sourceTree = "<group>"; };
+		34CC293A8D9681D7EEA914E55C299D6F /* CCAutocomplete-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCAutocomplete-umbrella.h"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		45C5E8B38FBCFD89BF5C9E27729C115D /* Pods-StockMarketSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StockMarketSearch.release.xcconfig"; sourceTree = "<group>"; };
+		4731DBFFEFFF8D7790FFA5BEA778A5E0 /* TableViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewDelegate.swift; path = Autocomplete/AutoComplete/TableViewDelegate.swift; sourceTree = "<group>"; };
+		47E3203B09E9A302466366AFC4891B9F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49286CCAA473EE0C3E64799CEC487223 /* Autocomplete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Autocomplete.swift; path = Autocomplete/AutoComplete/Autocomplete.swift; sourceTree = "<group>"; };
+		4D12C9AA9A783ED5804DBA4785856902 /* CCAutocomplete-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCAutocomplete-prefix.pch"; sourceTree = "<group>"; };
+		4EBFB472D7C64979D51A9EFDF0712180 /* Pods_StockMarketSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockMarketSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A7DFF28C261344CA3BE4255701FE71D /* AutocompleteCellData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutocompleteCellData.swift; path = Autocomplete/AutoComplete/AutocompleteCellData.swift; sourceTree = "<group>"; };
+		6A33EF3479416F25C5763783EC3AB0AE /* DefaultAutoCompleteCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DefaultAutoCompleteCell.xib; path = Autocomplete/AutoComplete/DefaultAutoCompleteCell.xib; sourceTree = "<group>"; };
+		8FF09A84455528C5E1B49D35BCE26716 /* CCAutocomplete.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CCAutocomplete.xcconfig; sourceTree = "<group>"; };
+		9B63EDF4B5CE7F0F0F4B9D31DDD591C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C79FC6B7996E824A7B781516273CF46 /* Pods-StockMarketSearch-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StockMarketSearch-frameworks.sh"; sourceTree = "<group>"; };
+		A277B82F0FB79266E014C73AC87DC101 /* AutoCompleteCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoCompleteCell.swift; path = Autocomplete/AutoComplete/AutoCompleteCell.swift; sourceTree = "<group>"; };
+		A5F9BDCF6F3C24F9FB844CA4A37F8C0D /* Pods-StockMarketSearch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-StockMarketSearch.modulemap"; sourceTree = "<group>"; };
+		AC4CB5E23F452F2CA5CAB863BFFFE625 /* Pods-StockMarketSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StockMarketSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; };
+		BB7259F37AEB620A7C8404BB7ADDDF57 /* CCAutocomplete.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CCAutocomplete.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBA8157B211D53670D3EF90E33F65E8B /* Autocomplete.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Autocomplete.storyboard; path = Autocomplete/AutoComplete/Autocomplete.storyboard; sourceTree = "<group>"; };
+		D4E1582339308024536B455D0DB550B5 /* CCAutocomplete.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CCAutocomplete.modulemap; sourceTree = "<group>"; };
+		D61074B9CE63E47576AAC7D157AA703A /* Pods-StockMarketSearch-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StockMarketSearch-resources.sh"; sourceTree = "<group>"; };
+		DD2583DE3F4F445A4A97234BBEAB09DD /* Pods-StockMarketSearch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StockMarketSearch-dummy.m"; sourceTree = "<group>"; };
+		E5D6825D8520F9531E767DDDE6464A05 /* Pods-StockMarketSearch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StockMarketSearch-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E51928F0493B5F208B0F32BB51A03F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F44F0D338398821A65D809A1C109AD6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5718888BE5108BC722E5630CB7697B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1EAC0BAF490D6BC873A75E1E536350A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C3B6A33D88E1B9D468AB0CD9EE71C4D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BBA8157B211D53670D3EF90E33F65E8B /* Autocomplete.storyboard */,
+				6A33EF3479416F25C5763783EC3AB0AE /* DefaultAutoCompleteCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				98E2FEFE0EEDFB106B0BA5FE862856D6 /* Pods */,
+				DD10E060B31E2708F7588D3C8D8CCBF1 /* Products */,
+				B96B7B9655CC496D53D788D4DAFB4D3B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		98E052CED0F0CD956CD1DD42F4EFA424 /* Pods-StockMarketSearch */ = {
+			isa = PBXGroup;
+			children = (
+				9B63EDF4B5CE7F0F0F4B9D31DDD591C0 /* Info.plist */,
+				A5F9BDCF6F3C24F9FB844CA4A37F8C0D /* Pods-StockMarketSearch.modulemap */,
+				E5D6825D8520F9531E767DDDE6464A05 /* Pods-StockMarketSearch-acknowledgements.markdown */,
+				0CD2D72D40F358AD79E8ED1F75DD69D6 /* Pods-StockMarketSearch-acknowledgements.plist */,
+				DD2583DE3F4F445A4A97234BBEAB09DD /* Pods-StockMarketSearch-dummy.m */,
+				9C79FC6B7996E824A7B781516273CF46 /* Pods-StockMarketSearch-frameworks.sh */,
+				D61074B9CE63E47576AAC7D157AA703A /* Pods-StockMarketSearch-resources.sh */,
+				2FE5C019E7C2FA0CC527785E9953AE63 /* Pods-StockMarketSearch-umbrella.h */,
+				AC4CB5E23F452F2CA5CAB863BFFFE625 /* Pods-StockMarketSearch.debug.xcconfig */,
+				45C5E8B38FBCFD89BF5C9E27729C115D /* Pods-StockMarketSearch.release.xcconfig */,
+			);
+			name = "Pods-StockMarketSearch";
+			path = "Target Support Files/Pods-StockMarketSearch";
+			sourceTree = "<group>";
+		};
+		98E2FEFE0EEDFB106B0BA5FE862856D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5C964208A25B828D063B69886B132D5 /* CCAutocomplete */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B96B7B9655CC496D53D788D4DAFB4D3B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				98E052CED0F0CD956CD1DD42F4EFA424 /* Pods-StockMarketSearch */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CE0385A7154EA228B26C7DC927C8DC20 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4E1582339308024536B455D0DB550B5 /* CCAutocomplete.modulemap */,
+				8FF09A84455528C5E1B49D35BCE26716 /* CCAutocomplete.xcconfig */,
+				2AF9837B6F9FE0986700D3C8FF8BF8AF /* CCAutocomplete-dummy.m */,
+				4D12C9AA9A783ED5804DBA4785856902 /* CCAutocomplete-prefix.pch */,
+				34CC293A8D9681D7EEA914E55C299D6F /* CCAutocomplete-umbrella.h */,
+				47E3203B09E9A302466366AFC4891B9F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CCAutocomplete";
+			sourceTree = "<group>";
+		};
+		D5C964208A25B828D063B69886B132D5 /* CCAutocomplete */ = {
+			isa = PBXGroup;
+			children = (
+				49286CCAA473EE0C3E64799CEC487223 /* Autocomplete.swift */,
+				A277B82F0FB79266E014C73AC87DC101 /* AutoCompleteCell.swift */,
+				5A7DFF28C261344CA3BE4255701FE71D /* AutocompleteCellData.swift */,
+				0845EB31A6A03478758B92053434D9B1 /* AutocompleteDelegate.swift */,
+				02EFD2A677477FD43547879D244B16A2 /* AutoCompleteViewController.swift */,
+				019ED7EE71D9F52A52A3F52A2A222E14 /* TableViewDatasource.swift */,
+				4731DBFFEFFF8D7790FFA5BEA778A5E0 /* TableViewDelegate.swift */,
+				7C3B6A33D88E1B9D468AB0CD9EE71C4D /* Resources */,
+				CE0385A7154EA228B26C7DC927C8DC20 /* Support Files */,
+			);
+			path = CCAutocomplete;
+			sourceTree = "<group>";
+		};
+		DD10E060B31E2708F7588D3C8D8CCBF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB7259F37AEB620A7C8404BB7ADDDF57 /* CCAutocomplete.framework */,
+				4EBFB472D7C64979D51A9EFDF0712180 /* Pods_StockMarketSearch.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		786DB2DD64BB18CD0A93A6C453B64D51 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50858E588A7A405BCFC1D0C3C1D08938 /* Pods-StockMarketSearch-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E330D0000D65B5649FFAFB5E72302EA8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23AEA0759E0AFC10B3E7038A1449368 /* CCAutocomplete-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		275024D93A00EB1CCEC7A64971EECD62 /* Pods-StockMarketSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7755145AD8D4F6669E77C95A5923B9C /* Build configuration list for PBXNativeTarget "Pods-StockMarketSearch" */;
+			buildPhases = (
+				81A5B31A180C57E3E5BFE1872F7ED7C0 /* Sources */,
+				A5718888BE5108BC722E5630CB7697B2 /* Frameworks */,
+				786DB2DD64BB18CD0A93A6C453B64D51 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05CFD0982EA8E862490F175D127DF780 /* PBXTargetDependency */,
+			);
+			name = "Pods-StockMarketSearch";
+			productName = "Pods-StockMarketSearch";
+			productReference = 4EBFB472D7C64979D51A9EFDF0712180 /* Pods_StockMarketSearch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A1B8A11CB006FD870EBBFCAD7E7EDEA8 /* CCAutocomplete */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50A8DA5CE7D9E139FD702ACEFBF25778 /* Build configuration list for PBXNativeTarget "CCAutocomplete" */;
+			buildPhases = (
+				C40FC513BED3341A25800A608D07287D /* Sources */,
+				6E51928F0493B5F208B0F32BB51A03F3 /* Frameworks */,
+				5EDFD43F5D66DF6C36948203351AF187 /* Resources */,
+				E330D0000D65B5649FFAFB5E72302EA8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCAutocomplete;
+			productName = CCAutocomplete;
+			productReference = BB7259F37AEB620A7C8404BB7ADDDF57 /* CCAutocomplete.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DD10E060B31E2708F7588D3C8D8CCBF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1B8A11CB006FD870EBBFCAD7E7EDEA8 /* CCAutocomplete */,
+				275024D93A00EB1CCEC7A64971EECD62 /* Pods-StockMarketSearch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EDFD43F5D66DF6C36948203351AF187 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F07C78779253D41E095B838CF7C15C41 /* Autocomplete.storyboard in Resources */,
+				5E601C50B1A22B64E99F9AA8271E3760 /* DefaultAutoCompleteCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81A5B31A180C57E3E5BFE1872F7ED7C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81990BCAC4F4FBADC3D54073DD3AF1B9 /* Pods-StockMarketSearch-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C40FC513BED3341A25800A608D07287D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7378FD696A4760AB326B6E746C11B648 /* Autocomplete.swift in Sources */,
+				1A9388F9B93A19817B63C58B2178785C /* AutoCompleteCell.swift in Sources */,
+				EF935AD349B0A80EAF4C2C09513B815F /* AutocompleteCellData.swift in Sources */,
+				172C6E5883333D3985912427AA1B278F /* AutocompleteDelegate.swift in Sources */,
+				1C584A4E8F8E2837CC8B049E5009AAAC /* AutoCompleteViewController.swift in Sources */,
+				316592E87EC08D6084654903638E85EE /* CCAutocomplete-dummy.m in Sources */,
+				B99CF4FB50545416804D16F8D26D9C3B /* TableViewDatasource.swift in Sources */,
+				578F618A8B0B97E1753A74B6BE0685A6 /* TableViewDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05CFD0982EA8E862490F175D127DF780 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CCAutocomplete;
+			target = A1B8A11CB006FD870EBBFCAD7E7EDEA8 /* CCAutocomplete */;
+			targetProxy = 9FA9D52BC841C94A8DAD9300473E5D0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		36633A4E7869F5332A73884E8E7D3E2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45C5E8B38FBCFD89BF5C9E27729C115D /* Pods-StockMarketSearch.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-StockMarketSearch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StockMarketSearch/Pods-StockMarketSearch.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_StockMarketSearch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4956D0B687335FE72AA3377B08299DF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FF09A84455528C5E1B49D35BCE26716 /* CCAutocomplete.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CCAutocomplete/CCAutocomplete-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CCAutocomplete/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CCAutocomplete/CCAutocomplete.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CCAutocomplete;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CD8B72051E6DD7FE98FD36F62D4E347A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FF09A84455528C5E1B49D35BCE26716 /* CCAutocomplete.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CCAutocomplete/CCAutocomplete-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CCAutocomplete/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CCAutocomplete/CCAutocomplete.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CCAutocomplete;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F3BB9F1307E17310FC800761101B2BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC4CB5E23F452F2CA5CAB863BFFFE625 /* Pods-StockMarketSearch.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-StockMarketSearch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StockMarketSearch/Pods-StockMarketSearch.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_StockMarketSearch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50A8DA5CE7D9E139FD702ACEFBF25778 /* Build configuration list for PBXNativeTarget "CCAutocomplete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4956D0B687335FE72AA3377B08299DF3 /* Debug */,
+				CD8B72051E6DD7FE98FD36F62D4E347A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7755145AD8D4F6669E77C95A5923B9C /* Build configuration list for PBXNativeTarget "Pods-StockMarketSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3BB9F1307E17310FC800761101B2BD7 /* Debug */,
+				36633A4E7869F5332A73884E8E7D3E2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
